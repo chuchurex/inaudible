@@ -1,0 +1,21 @@
+{
+  "site": {
+    "title": "(inaudible) - Transcripts & Translations",
+    "description": "Transcriptions and translations of the inaudible podcast for study"
+  },
+  "home": {
+    "heading": "Episodes",
+    "subtitle": "Listening for love in the messages of the Confederation"
+  },
+  "episode": {
+    "transcript": "Transcript",
+    "noTranscript": "Transcript not available yet.",
+    "readEditedTranscript": "Read edited version",
+    "watchOnYoutube": "Watch on YouTube",
+    "backToEpisodes": "Back to episodes"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}

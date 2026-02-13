@@ -1,0 +1,21 @@
+{
+  "site": {
+    "title": "(inaudible) - Transcripciones y Traducciones",
+    "description": "Transcripciones y traducciones del podcast inaudible para estudio"
+  },
+  "home": {
+    "heading": "Episodios",
+    "subtitle": "Escuchando el amor en los mensajes de la Confederaci\u00f3n"
+  },
+  "episode": {
+    "transcript": "Transcripci\u00f3n",
+    "noTranscript": "Transcripci\u00f3n no disponible a\u00fan.",
+    "readEditedTranscript": "Leer versi\u00f3n editada",
+    "watchOnYoutube": "Ver en YouTube",
+    "backToEpisodes": "Volver a episodios"
+  },
+  "language": {
+    "en": "Ingl\u00e9s",
+    "es": "Espa\u00f1ol"
+  }
+}

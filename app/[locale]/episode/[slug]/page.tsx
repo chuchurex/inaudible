@@ -3,12 +3,18 @@ import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import {
+  getAllEpisodes,
   getEpisodeBySlug,
   getTranscript,
   getTranscriptMarkdown,
   hasEditedTranscript,
 } from "@/lib/episodes";
 import TranscriptViewer from "@/components/TranscriptViewer";
+
+export function generateStaticParams() {
+  const episodes = getAllEpisodes();
+  return episodes.map((ep) => ({ slug: ep.slug }));
+}
 
 export default async function EpisodePage({
   params,
@@ -80,7 +86,7 @@ export default async function EpisodePage({
         <div className="flex items-center gap-4">
           {editedTranscriptAvailable && (
             <a
-              href={`/api/transcript?episode=${episode.number}&locale=${locale}`}
+              href={`/${locale}/episode/${episode.slug}/edited/`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-amber-600 hover:text-amber-500 dark:text-amber-400 dark:hover:text-amber-300"
